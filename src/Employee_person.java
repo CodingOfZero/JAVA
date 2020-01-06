@@ -1,6 +1,7 @@
 import java.time.LocalDate;
 
-public class Employee_person extends Person{
+
+public class Employee_person extends Person implements Comparable<Employee_person>,Cloneable{//声明接口
     private double salary;
     private LocalDate hireDay;
     public Employee_person(String name,double salary,int year,int month,int day){
@@ -23,5 +24,9 @@ public class Employee_person extends Person{
     }
     public String toString(){
         return getClass().getName()+"[name="+super.getName()+",salary="+salary+",hireDay="+hireDay+"]";
+    }
+
+    public int compareTo(Employee_person other){
+        return Double.compare(salary,other.salary);
     }
 }

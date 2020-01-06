@@ -164,7 +164,11 @@ public class BaseGramme {
         //见CopyOfTest.java,使用反射编写泛型数组代码
         //见MethodTableTest.java,调用任意方法，最好使用接口以及lambda表达式。
 
-
+//接口
+        //见TimerTest.java
+        //见EmployeeSortTest.java   Employee_person.java实现了接口Comparable
+        //见CloneTest.java 对象克隆
+//Lambda表达式
     }
     //可变参数
     public static double max(double...values){
