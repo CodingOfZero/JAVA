@@ -72,7 +72,7 @@ public class ReflectionTest {
      * @param cl a class
      * */
     public static void printMethods(Class cl){
-        Method[] methods=cl.getMethods();
+        Method[] methods=cl.getDeclaredMethods();
 
         for(Method m:methods){
             System.out.print("  ");
@@ -99,7 +99,7 @@ public class ReflectionTest {
      * @param cl a class
      * */
     public static void printFields(Class cl){
-        Field[] fields=cl.getFields();
+        Field[] fields=cl.getDeclaredFields();
 
         for(Field f:fields){
             System.out.print("  ");
