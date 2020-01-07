@@ -169,6 +169,9 @@ public class BaseGramme {
         //见EmployeeSortTest.java   Employee_person.java实现了接口Comparable
         //见CloneTest.java 对象克隆
 //Lambda表达式
+        //见LambdaTest.java
+//内部类
+        //见InnerClassTest.java
     }
     //可变参数
     public static double max(double...values){
