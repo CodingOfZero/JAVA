@@ -35,6 +35,7 @@ class Employee{
         id=0;
         hireDay=LocalDate.of(year,month,day);
     }
+    public Employee(String n){name=n;}
     public String getName(){
         return name;
     }
