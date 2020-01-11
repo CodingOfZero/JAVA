@@ -183,6 +183,7 @@ public class BaseGramme {
         //链表：见LinkedListTest.java
         //散列集：见SetTest.java
         //树集：见TreeSetTest.java Item.java
+        //优先队列：见PriorityQueueTest.java
     }
     //可变参数
     public static double max(double...values){
