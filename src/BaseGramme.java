@@ -4,6 +4,11 @@ import java.io.PrintWriter;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.logging.FileHandler;
+import java.util.logging.Handler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 //import static java.lang.Math.*;//这里得加static，为什么？
 public class BaseGramme {
     public static final double CM_PER=2.54;//关键字static final设置类常量，可在多个方法中使用
@@ -174,6 +179,9 @@ public class BaseGramme {
         //见InnerClassTest.java
 //异常
         //打印堆栈轨迹,见StackTraceTest.java
+//集合
+        //链表：见LinkedListTest.java
+        //散列集：见SetTest.java
     }
     //可变参数
     public static double max(double...values){
