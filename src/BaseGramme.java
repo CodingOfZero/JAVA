@@ -186,6 +186,7 @@ public class BaseGramme {
         //优先队列：见PriorityQueueTest.java
         //映射：见MapTest.java
         //算法：见ShuffleTest.java
+        //打印素数：见Sieve.java
     }
     //可变参数
     public static double max(double...values){
