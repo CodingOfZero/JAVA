@@ -24,11 +24,14 @@ public class StaticTest {
 
 }
 class Employee{
+    public static final int RECORD_SIZE = 100;
+    public static final int NAME_SIZE=40;
     private static int nextId=1;//属于类且不属于类对象的变量
     private String name;//实例域
     private double salary;
     private int id;
     private LocalDate hireDay;
+
     public Employee(String n,double s,int year,int month,int day){
         name=n;
         salary=s;
@@ -36,6 +39,10 @@ class Employee{
         hireDay=LocalDate.of(year,month,day);
     }
     public Employee(String n){name=n;}
+
+    public Employee() {
+    }
+
     public String getName(){
         return name;
     }
@@ -64,6 +71,16 @@ class Employee{
         double raise=this.salary*byPercent/100;//this表示隐式参数，此风格可将实例域与局部变量明显区分开来
         this.salary+=raise;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", salary=" + salary +
+                ", hireDay=" + hireDay +
+                '}';
+    }
+
     public static void main(String[] args){
         Employee e=new Employee("Harry",50000,2019,3,1);
         System.out.println(e.getName()+" "+e.getSalary());
