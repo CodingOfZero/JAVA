@@ -1,9 +1,7 @@
-import java.util.Comparator;
-import java.util.SortedSet;
-import java.util.TreeSet;
-import java.util.NavigableSet;
+import java.util.*;
+
 public class TreeSetTest {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         SortedSet<Item> parts=new TreeSet<>();//为什么不用TreeSet，而是使用SortedSet，是由于接口吗？
         parts.add(new Item("Toaster",1234));
         parts.add(new Item("Widget",4562));
@@ -15,7 +13,14 @@ public class TreeSetTest {
         sortByDescription.addAll(parts);
         System.out.println(sortByDescription);
 
+        //集合转换为数组
+//        List<Integer> list = new LinkedList<>();
+//        list.add(23);
+//        list.add(34);
+//        Integer[] k = list.toArray(new Integer[0]);
+//        for (int l : k)
+//            System.out.println(l);
+
+
     }
-
-
 }
