@@ -21,5 +21,6 @@ public class ThreadLocalTest {
         thread.start();
         Thread.sleep(3000);
         System.out.println("main thread finish");
+        System.out.println(Runtime.getRuntime().availableProcessors());
     }
 }
